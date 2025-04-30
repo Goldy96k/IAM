@@ -1,0 +1,58 @@
+# 🛡️ IAM Users & Groups - AWS IAM Assignment (Module 3)
+
+## 📌 Problem Statement
+
+You work for **XYZ Corporation**. To maintain the security of the AWS account and the resources, you have been asked to implement a solution that can help easily recognize and monitor different users.
+
+## 🎯 Objectives
+
+- Create IAM users and groups
+- Assign users to appropriate groups based on roles
+- Practice AWS Identity and Access Management (IAM)
+
+---
+
+## ✅ Tasks Performed
+
+### 1️⃣ Create IAM Users
+- Created 4 IAM users:
+  - `Dev1`
+  - `Dev2`
+  - `Test1`
+  - `Test2`
+
+### 2️⃣ Create IAM Groups
+- Created 2 groups:
+  - `Dev Team`
+  - `Ops Team`
+
+### 3️⃣ Add Users to Groups
+- Added `Dev1` and `Dev2` to the **Dev Team**
+- Added `Dev1`, `Test1`, and `Test2` to the **Ops Team**
+
+---
+
+## 🛠️ Tools & Services Used
+
+- AWS Management Console
+- IAM (Identity and Access Management)
+
+---
+
+## 🔒 Security Best Practices Followed
+
+- Group-based permission assignment for better manageability
+- Principle of Least Privilege (PoLP) can be applied on groups later
+
+---
+
+## 📷 Screenshots
+
+(Screenshots of user creation, group creation, and user-group assignments can be added here if available)
+
+---
+
+## 📚 Learning Outcome
+
+- Understood how to create and manage IAM users and groups in AWS
+- Learned efficient user access management using IAM groups
