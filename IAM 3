@@ -1,0 +1,38 @@
+# Module 3: IAM Roles Assignment
+
+## 🧠 Problem Statement:
+You work for XYZ Corporation. To maintain the security of the AWS account and the resources, you have been asked to implement a solution that can help easily recognize and monitor the different users.
+
+---
+
+## ✅ Tasks Performed:
+
+1. **Create a role**
+   - Created a role that allows only `user1` and `user2` (from previous IAM Users task) to assume it.
+   - Granted full access to:
+     - **VPC**
+     - **DynamoDB**
+
+2. **Attach permissions to the role**
+   - Attached the following AWS managed policies:
+     - `AmazonVPCFullAccess`
+     - `AmazonDynamoDBFullAccess`
+
+3. **Test Role Switching**
+   - Logged in as `user1`
+   - Switched to the created role using **Switch Role** option in AWS Console
+   - Verified access to VPC and DynamoDB
+
+---
+
+## 🛡️ Outcome:
+- Role-based access was successfully tested and verified.
+- `user1` and `user2` were able to access only permitted services after assuming the role.
+- Other users had no access, ensuring **secure and controlled resource management**.
+
+---
+
+## 🧰 Services Used:
+- AWS IAM
+- AWS VPC
+- AWS DynamoDB
