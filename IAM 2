@@ -1,0 +1,42 @@
+# IAM Policies Assignment – AWS
+
+## 📘 Project Description
+
+This project simulates a real-world AWS security management task for XYZ Corporation. The goal is to define and assign custom IAM policies to specific teams (created in Module 3 Task 1) for fine-grained access control over AWS services like S3, EC2, RDS, CloudWatch, and Billing.
+
+## ✅ Tasks Performed
+
+### 🔒 Policy 1 (For Ops Team users):
+- **Full access to S3**
+- **Permission to create EC2 instances only**
+- **Full access to RDS**
+
+### 🔒 Policy 2:
+- **Full access to CloudWatch and Billing**
+- **Only List access for EC2 and S3 resources**
+
+---
+
+### 🧩 Steps Followed
+
+1. **Created IAM Policy 1**  
+   - Services: `S3`, `EC2`, `RDS`  
+   - Actions:
+     - `"s3:*"`  
+     - `"ec2:RunInstances"` (only allow instance creation)  
+     - `"rds:*"`
+
+2. **Created IAM Policy 2**  
+   - Services: `CloudWatch`, `Billing`, `EC2`, `S3`  
+   - Actions:
+     - `"cloudwatch:*"`, `"aws-portal:*Billing"`  
+     - `"ec2:Describe*"`  
+     - `"s3:List*"`
+
+3. **Attached Policy 1 to "Dev Team" group**
+
+4. **Attached Policy 2 to "Ops Team" group**
+
+---
+
+## 🛠️ AWS Services
